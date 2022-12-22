@@ -95,9 +95,9 @@ fi
 
 # AZURE DEVOPS
 
-# ado_login(){
-#     echo  "${AZURE_DEVOPS_EXT_PAT}" | az devops login --organization "${ADO_ENDPOINT}/${ADO_ORG_NAME}"
-# }
+ ado_login(){
+     echo  "${AZURE_DEVOPS_EXT_PAT}" | az devops login --organization "${ADO_ENDPOINT}/${ADO_ORG_NAME}"
+ }
 
 ado_config_defaults() {
     az devops configure --defaults organization="${ADO_ENDPOINT}/${ADO_ORG_NAME}" project="${UNIQUE_NAME}"
